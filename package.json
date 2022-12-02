@@ -9,9 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/cookie": "^4.5.9",
+    "@fontsource/libre-baskerville": "^4.5.10",
+    "@fontsource/poppins": "^4.5.10",
+    "framer-motion": "^7.6.17",
+    "install": "^0.13.0",
     "next": "13.0.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "sass": "^1.56.1"
   },
   "devDependencies": {
     "eslint": "8.28.0",
