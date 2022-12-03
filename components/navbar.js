@@ -1,19 +1,23 @@
 import { Box, Flex, Heading, HStack, Link, Text } from "@chakra-ui/react";
 import React from "react";
+import { BiPhoneCall } from "react-icons/bi";
+import { FiClock } from "react-icons/fi";
 import MainContainer from "./layout/mainContainer";
-
 const LinkItem = ({ text }) => {
      return (
-          <Link py={"3em"} px="0.5em">
+          <Link
+               py={"2.5em"}
+               px="0.5em"
+               color="black"
+               _hover={{
+                    color: "pink",
+               }}
+          >
                <Text
                     textTransform={"uppercase"}
-                    color="black"
                     fontWeight={"bold"}
-                    fontSize="14px"
+                    fontSize={{ base: "12px", xl: "14px" }}
                     letterSpacing={"1px"}
-                    _hover={{
-                         color: "pink",
-                    }}
                >
                     {text}
                </Text>
@@ -27,10 +31,26 @@ const Navbar = () => {
                <Box bgColor={"bgGrey"}>
                     <MainContainer>
                          <Flex justifyContent={"space-between"} py="0.9em">
-                              <Text>Lorem ipsum dolor sit amet.</Text>
-                              <Flex>
-                                   <Text>+18 065 555 22 33</Text>
-                                   <Text>Mn-Sn: 8am to 9pm</Text>
+                              <Text
+                                   textStyle="main"
+                                   display={{ base: "none", lg: "block" }}
+                              >
+                                   PathWell - We are allways here!
+                              </Text>
+                              <Flex gap="20px">
+                                   <Flex alignItems="center" gap="5px">
+                                        <BiPhoneCall fontSize="25px" />
+                                        <Text textStyle="main">
+                                             +18 065 555 22 33
+                                        </Text>
+                                   </Flex>
+
+                                   <Flex alignItems="center" gap="5px">
+                                        <FiClock fontSize="25px" />
+                                        <Text textStyle="main">
+                                             Mn-Sn: 8am to 9pm
+                                        </Text>
+                                   </Flex>
                               </Flex>
                          </Flex>
                     </MainContainer>
@@ -42,7 +62,7 @@ const Navbar = () => {
                               <LinkItem text="Home" />
                               <LinkItem text="about us" />
                               <LinkItem text="servives" />
-                              <LinkItem text="Living options" />
+
                               <LinkItem text="features" />
                               <LinkItem text="contacts" />
                          </HStack>

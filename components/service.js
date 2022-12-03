@@ -1,5 +1,6 @@
 import {
-     Box,
+     Center,
+     Flex,
      Grid,
      GridItem,
      Image,
@@ -30,6 +31,7 @@ const Service = () => {
                               objectFit="cover"
                               height={"full"}
                               width="full"
+                              alt="a"
                          />
                          {/* <Box
                               backgroundImage="url(
@@ -64,24 +66,23 @@ const Service = () => {
                                    well as body.
                               </Text>
 
-                              <Box position={"relative"} width="100%">
-                                   <Box
+                              <Flex>
+                                   <Center
                                         borderRadius={"100%"}
-                                        p="30px"
-                                        width={"50px"}
+                                        width="60px"
+                                        height="60px"
                                         bgColor="pink"
                                         color={"white"}
-                                        fontsize="30px"
-                                        className="divider"
+                                        fontSize="30px"
                                    >
                                         <TbMessages />
-                                   </Box>
-                                   <Link href="/">
-                                        <Text textStyle={"red"}>
-                                             yourwebsite@info.com
-                                        </Text>
-                                   </Link>
-                              </Box>
+                                   </Center>
+                              </Flex>
+                              <Link href="/">
+                                   <Text textStyle={"red"}>
+                                        yourwebsite@info.com
+                                   </Text>
+                              </Link>
                          </VStack>
                     </GridItem>
                </Grid>

@@ -1,22 +1,22 @@
 import { Center, Grid, GridItem, Link, Text } from "@chakra-ui/react";
 import React from "react";
-import { FaWheelchair } from "react-icons/fa";
+import { CiPill } from "react-icons/ci";
 import MainContainer from "./layout/mainContainer";
 const service = [
      {
-          icon: <FaWheelchair />,
+          icon: <CiPill />,
           heading: ["Personalized Care Service"],
      },
      {
-          icon: <FaWheelchair />,
+          icon: <CiPill />,
           heading: ["In-Home Health Care"],
      },
      {
-          icon: <FaWheelchair />,
+          icon: <CiPill />,
           heading: ["Professional Medical Eximination"],
      },
      {
-          icon: <FaWheelchair />,
+          icon: <CiPill />,
           heading: ["Complete Medical Supply"],
      },
 ];
@@ -32,6 +32,7 @@ const ServiceCard = ({ heading, icon, href }) => {
                     }}
                     width="full"
                     whiteSpace={"wrap"}
+                    my="50px"
                >
                     {service.map(({ ...props }, index) => {
                          return (
@@ -41,7 +42,7 @@ const ServiceCard = ({ heading, icon, href }) => {
                                              <div class="thefront">
                                                   <>
                                                        <Center
-                                                            bgColor={"water"}
+                                                            bgColor={"drop"}
                                                             width={{
                                                                  base: "40px",
                                                                  xl: "60px",
@@ -51,7 +52,7 @@ const ServiceCard = ({ heading, icon, href }) => {
                                                                  xl: "60px",
                                                             }}
                                                             borderRadius="100%"
-                                                            fontSize={"30px"}
+                                                            fontSize={"40px"}
                                                             mb="15px"
                                                             color={"#333"}
                                                        >

@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import Features from "../components/feature";
 import Header from "../components/header";
 import Banner from "../components/layout/banner";
@@ -11,8 +10,6 @@ export default function Home() {
           <>
                <Header />
                <Service />
-
-               <Box height="50px" />
                <ServiceCard />
                <Banner
                     h2="Competent Medical Senior Care"

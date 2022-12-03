@@ -12,26 +12,27 @@ import React from "react";
 import Btn from "../utils/button";
 import Hding from "../utils/hding";
 import Space from "../utils/space";
+import Contact from "./contact";
 import MainContainer from "./layout/mainContainer";
 
 const team = [
      {
-          image: "/",
+          image: "https://pathwell.axiomthemes.com/wp-content/uploads/2017/10/blog-11-copyright.jpg?id=46",
           name: "Lorem lorem",
           job: "Caregiver",
      },
      {
-          image: "/",
+          image: "https://pathwell.axiomthemes.com/wp-content/uploads/2017/10/blog-11-copyright.jpg?id=46",
           name: "Lorem lorem",
           job: "Physican",
      },
      {
-          image: "/",
+          image: "https://pathwell.axiomthemes.com/wp-content/uploads/2017/10/blog-11-copyright.jpg?id=46",
           name: "Lorem lorem",
           job: "Manager",
      },
      {
-          image: "/",
+          image: "https://pathwell.axiomthemes.com/wp-content/uploads/2017/10/blog-11-copyright.jpg?id=46",
           name: "Lorem lorem",
           job: "CEO",
      },
@@ -85,6 +86,7 @@ const Teams = () => {
                     </Center>
                </MainContainer>{" "}
                <Space />
+               <Contact />
           </Box>
      );
 };
