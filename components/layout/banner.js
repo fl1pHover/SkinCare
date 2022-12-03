@@ -2,7 +2,7 @@ import { Box, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import Btn from "../../utils/button";
 import MainContainer from "./mainContainer";
-const Banner = ({ h2, text, hw }) => {
+const Banner = ({ children, h2, text, hw, btn }) => {
      return (
           <Box
                position="relative"
@@ -45,12 +45,13 @@ const Banner = ({ h2, text, hw }) => {
                               {h2}
                          </Text>
                          <Text textStyle="hw" my="20px">
-                              {text}
-                         </Text>
-                         <Text textStyle="main" my="20px" color="white">
                               {hw}
                          </Text>
-                         <Btn href={"/"} text="Contact us" />
+                         <Text textStyle="main" my="20px" color="white">
+                              {text}
+                         </Text>
+                         {children}
+                         <Btn href={"/"} text={btn} />
                     </MainContainer>
                </VStack>
           </Box>

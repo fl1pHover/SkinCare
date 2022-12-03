@@ -28,7 +28,7 @@ const LinkItem = ({ text }) => {
 const Navbar = () => {
      return (
           <>
-               <Box bgColor={"bgGrey"}>
+               <Box bgColor={"bgGrey"} id="navbar" as="section">
                     <MainContainer>
                          <Flex justifyContent={"space-between"} py="0.9em">
                               <Text

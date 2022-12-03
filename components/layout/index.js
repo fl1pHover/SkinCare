@@ -5,8 +5,8 @@ const Layout = ({ children }) => {
      return (
           <>
                <Head>
-                    <title>BOM</title>
-                    <meta name="description" content="Bom, zariin site" />
+                    <title>Skin</title>
+                    <meta name="description" content="Skin" />
                     {/* <link rel="icon" href="/favicon.ico" /> */}
                </Head>
                <div>{children}</div>

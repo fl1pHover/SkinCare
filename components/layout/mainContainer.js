@@ -1,7 +1,7 @@
 import { Container } from "@chakra-ui/react";
 import React from "react";
 
-const MainContainer = ({ children }) => {
+const MainContainer = ({ children, id, as }) => {
      return (
           <Container
                maxW={{
@@ -13,6 +13,8 @@ const MainContainer = ({ children }) => {
                     "2xl": "1300px",
                }}
                pos="relative"
+               id={id}
+               as={as}
           >
                {children}
           </Container>

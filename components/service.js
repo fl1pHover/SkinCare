@@ -15,7 +15,7 @@ import MainContainer from "./layout/mainContainer";
 
 const Service = () => {
      return (
-          <MainContainer>
+          <MainContainer id="service" as="section">
                <Grid
                     templateColumns={{
                          base: "repeat(1,1fr)",

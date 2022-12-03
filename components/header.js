@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
      return (
           <>
-               <Box
+               <Box id="header" as="section"
                     position={"relative"}
                     marginBottom="-50px"
                     _before={{

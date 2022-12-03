@@ -53,7 +53,7 @@ const FooterItem = ({ href, text }) => {
 const Footer = () => {
      return (
           <>
-               <Box bgColor="brown" >
+               <Box bgColor="brown" id="footer" as="section">
                     <MainContainer>
                          <Flex
                               justifyContent="space-between"

@@ -12,7 +12,6 @@ import React from "react";
 import Btn from "../utils/button";
 import Hding from "../utils/hding";
 import Space from "../utils/space";
-import Contact from "./contact";
 import MainContainer from "./layout/mainContainer";
 
 const team = [
@@ -39,7 +38,7 @@ const team = [
 ];
 const Teams = () => {
      return (
-          <Box bgColor="bgGrey" textAlign="center">
+          <Box id="teams" as="section" bgColor="bgGrey" textAlign="center">
                <Space />
                <MainContainer>
                     <Hding h1="Meet Our Team" h3="Who we are" />
@@ -86,7 +85,6 @@ const Teams = () => {
                     </Center>
                </MainContainer>{" "}
                <Space />
-               <Contact />
           </Box>
      );
 };

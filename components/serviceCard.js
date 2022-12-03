@@ -23,7 +23,7 @@ const service = [
 
 const ServiceCard = ({ heading, icon, href }) => {
      return (
-          <MainContainer>
+          <MainContainer id="service__card" as="section" >
                <Grid
                     templateColumns={{
                          base: "repeat(1,1fr)",

@@ -13,7 +13,6 @@ import React from "react";
 import { FiPhoneCall } from "react-icons/fi";
 import Hding from "../utils/hding";
 import MainContainer from "./layout/mainContainer";
-import Space from "../utils/space";
 
 const ContactBanner = () => {
      return (
@@ -121,8 +120,7 @@ const choose = [
 
 const Features = () => {
      return (
-          <MainContainer>
-              
+          <MainContainer id="features" as="section">
                <ContactBanner />
                <Grid
                     templateColumns={{

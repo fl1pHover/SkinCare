@@ -32,7 +32,7 @@ const contact = [
 
 const Contact = () => {
      return (
-          <MainContainer>
+          <MainContainer id="contact" as="section">
                <Grid
                     templateColumns={{
                          base: "repeat(1,1fr)",
