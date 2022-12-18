@@ -78,10 +78,10 @@ const Footer = () => {
                               </Text>
                               <VStack alignItems="flex-start">
                                    <Text textStyle="main" color="bgGrey">
-                                        AxiomThemes © 2022.
+                                        Мон Шинжүкү © 2022.
                                    </Text>
                                    <Text textStyle="main">
-                                        All Rights Reserved.
+                                        Бүх эрх хуулиар хамгаалагдсан.
                                    </Text>
                               </VStack>
                          </Flex>{" "}
@@ -90,11 +90,11 @@ const Footer = () => {
                <Box bgColor="darkBrown" py="10px">
                     <MainContainer>
                          <Flex flexWrap="wrap" justifyContent="center">
-                              <FooterItem href="/" text="home" />
-                              <FooterItem href="/" text="about us" />
-                              <FooterItem href="/" text="services" />
-                              <FooterItem href="/" text="pages" />
-                              <FooterItem href="/" text="contacts" />
+                              <FooterItem href="/" text="Нүүр" />
+                              <FooterItem href="/" text="Бидний тухай" />
+                              <FooterItem href="/" text="Үйлчилгээ" />
+                              <FooterItem href="/" text="Тоног төхөөрөмж" />
+                              <FooterItem href="/" text="Бидэнтэй холбогдох" />
                          </Flex>
                     </MainContainer>
                </Box>

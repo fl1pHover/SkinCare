@@ -15,18 +15,18 @@ import MainContainer from "./layout/mainContainer";
 const contact = [
      {
           icon: <GoLocation />,
-          title: "Address:",
-          info: "71 Pilgrim Avenue \n" + "Chevy Chase, MD 20815",
+          title: "Хаяг:",
+          info: "БЗД-ийн 1-р хороо, Consultower \n" + "79-р байрны үйлчилгээний төвийн 1 тоот",
      },
      {
           icon: <BiMessageRounded />,
-          title: "Email:",
-          info: "youremail@info.com",
+          title: "Е-мэйл:",
+          info: "monshinjyukuskinmed@gmail.com",
      },
      {
           icon: <BiPhoneCall />,
-          title: "Phone:",
-          info: "+18 (077) 555 22 33",
+          title: "Утас:",
+          info: "+976 9966 5511",
      },
 ];
 
@@ -43,7 +43,7 @@ const Contact = () => {
                     <GridItem>
                          <AspectRatio ratio={{ base: 3 / 4, lg: 4 / 5 }}>
                               <iframe
-                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5195.490207367872!2d106.91772847025801!3d47.91965503015372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9692442297c949%3A0x71884efc4dce5cb2!2sSukhbaatar%20Square!5e0!3m2!1sen!2smn!4v1670029773811!5m2!1sen!2smn"
+                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.10834000784956!2d106.932649345242!3d47.927331442999666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693b85981d6fd%3A0x2101d3759f6f8015!2z0JzQvtC9INGI0LjQvdC20LjQutKvINCw0YDRjNGB0L3RiyDRjdC80L3RjdC70Y3Qsw!5e0!3m2!1sen!2smn!4v1671343547177!5m2!1sen!2smn" 
                                    width="100%"
                                    height="100%"
                               />
@@ -58,7 +58,7 @@ const Contact = () => {
                          flexDirection="column"
                          textAlign="start"
                     >
-                         <Hding h1="Contact Us" h3="Stay in touch" />
+                         <Hding h1="Бидэнтэй холбогдох" h3="Stay in touch" />
 
                          {contact.map(({ ...props }, index) => {
                               return (

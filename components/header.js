@@ -19,7 +19,7 @@ const Header = () => {
                >
                     <Image
                          position={"relative"}
-                         src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                         src="https://scontent.fuln1-2.fna.fbcdn.net/v/t39.30808-6/256766402_3144010949209120_3197352341693407159_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHZY8Br3_aXX3u98EjGnnEK9HJFrdTJiB_0ckWt1MmIH9f6OCHtmEj6lBzj_X-qLH0nJ36mMYALiqIpG6-gdrP_&_nc_ohc=8Fcz6O2x1-0AX_WeLtv&_nc_ht=scontent.fuln1-2.fna&oh=00_AfDf1tineKS0HBbpiAYdhKrw9K5E9nT7_aPM6GsJ66e5WQ&oe=63A46918"
                          alt="image"
                          objectFit="cover"
                          width={"full"}
@@ -43,15 +43,15 @@ const Header = () => {
                               }}
                               textAlign={"center"}
                          >
-                              Care for Every
+                              Мон Шинжүкү
                               <br />
-                              Situation
+                              скин мед
                          </Heading>
                          <Text textStyle={"hw"} color={"water"}>
                               Lorem ipsum dolor sit.
                          </Text>
                          <Button variant={"textBtn"} rounded="50px">
-                              Contact Us
+                              Бидэнтэй холбогдох
                          </Button>
                     </VStack>
                </Box>

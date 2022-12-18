@@ -35,7 +35,7 @@ const Navbar = () => {
                                    textStyle="main"
                                    display={{ base: "none", lg: "block" }}
                               >
-                                   PathWell - We are allways here!
+                                   Бидэнтэй түргэн холбогдоорой!
                               </Text>
                               <Flex gap="20px">
                                    <Flex alignItems="center" gap="5px">
