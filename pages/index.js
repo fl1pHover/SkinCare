@@ -1,12 +1,15 @@
-import { Box } from "@chakra-ui/react";
-import Contact from "../components/contact";
-import Features from "../components/feature";
-import Header from "../components/header";
+import {
+     About,
+     Contact,
+     Features,
+     Header,
+     Review,
+     Service,
+     ServiceCard,
+     Teams,
+} from "../components";
 import Banner from "../components/layout/banner";
-import Review from "../components/review";
-import Service from "../components/service";
-import ServiceCard from "../components/serviceCard";
-import Teams from "../components/teams";
+
 export default function Home() {
      return (
           <>
@@ -25,7 +28,8 @@ export default function Home() {
                     text="Independent Living is a living option for residents to enjoy the freedom, services & amenities with the confidence of knowing that support is available."
                     btn="more information"
                />
-               <Box height="100px" />
+
+               <About />
                <Review />
                <Contact />
           </>

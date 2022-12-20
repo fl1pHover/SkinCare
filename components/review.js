@@ -16,13 +16,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import MainContainer from "./layout/mainContainer";
 
-const review = [
-     {
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus fugit laborum, perspiciatis obcaecati cum. Iste illum sunt alias reprehenderit voluptatem exercitationem quod fuga delectus ex. Et eligendi libero rem?",
-          name: "Lorem lorem",
-          avatar: "https://pathwell.axiomthemes.com/wp-content/uploads/2017/11/bg-15-copyright.jpg?id=314",
-     },
-];
+import { review } from "../constant";
 
 const Review = () => {
      return (
