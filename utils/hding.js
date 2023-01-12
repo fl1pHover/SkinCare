@@ -8,6 +8,7 @@ const Hding = ({ h1, h3 }) => {
         fontSize={{ base: '24px', md: '2em', '2xl': '2.7em' }}
         fontWeight="bold"
         lineHeight={'1.3'}
+        className="main__heading"
       >
         {h1}
       </Heading>

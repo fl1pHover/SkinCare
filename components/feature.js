@@ -170,7 +170,9 @@ const Features = () => {
                     </Center>
                   </Box>
                   <Stack>
-                    <Text textStyle="mainHeading">{props.heading}</Text>
+                    <Text textStyle="mainHeading" className="main__heading">
+                      {props.heading}
+                    </Text>
                     <Text textStyle="main">{props.info}</Text>
                   </Stack>
                 </Flex>

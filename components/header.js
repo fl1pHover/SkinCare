@@ -44,6 +44,7 @@ const Header = () => {
               '2xl': '80px',
             }}
             textAlign={'center'}
+            className="main__heading"
           >
             Мон Шинжүкү
             <br />

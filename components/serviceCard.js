@@ -51,6 +51,7 @@ const ServiceCard = ({ heading, icon, href }) => {
                           lg: '60px',
                         }}
                         lineHeight="1.4"
+                        className="main__heading"
                       >
                         {props.heading}
                       </Text>
