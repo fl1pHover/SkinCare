@@ -18,27 +18,28 @@ const ContactBanner = () => {
   return (
     <Grid
       templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
+      gap={{ base: 5 }}
       bgColor="brown"
       color="white"
       pos="relative"
-      padding="70px 30px"
-      transform="translateY(-50px)"
+      padding={{ base: '50px 30px', md: '70px 30px' }}
+      transform={{ base: 'translateY(50px)', sm: 'translateY(-50px)' }}
       zIndex="1"
     >
       <GridItem>
         <Flex
           cursor="pointer"
-          justifyContent="center"
+          justifyContent={{ base: 'flex-start', sm: 'center' }}
           className="contact__banner"
         >
           <Center
             pos="relative"
-            width="70px"
-            height="70px"
+            width={{ base: '50px', md: '70px' }}
+            height={{ base: '50px', md: '70px' }}
             bgColor="#3e3836"
             borderRadius="100%"
             mr="30px"
-            fontSize="30px"
+            fontSize={{ base: '20px', md: '30px' }}
             color="pink"
             className="phone__icon"
           >
@@ -46,10 +47,17 @@ const ContactBanner = () => {
             <FiPhoneCall className="phone__ani" />
           </Center>
           <VStack alignItems="flex-start">
-            <Text textStyle="mainHeading" fontSize="20px">
+            <Text
+              textStyle="mainHeading"
+              fontSize={{ base: '16px', md: '18px' }}
+            >
               Зөвөлгөө авах дугаар
             </Text>
-            <Text fontSize="22px" color="#cccccc" className="phone">
+            <Text
+              fontSize={{ base: '17px', md: '20px' }}
+              color="#cccccc"
+              className="phone"
+            >
               +976 88330044
             </Text>
           </VStack>
@@ -58,17 +66,17 @@ const ContactBanner = () => {
       <GridItem>
         <Flex
           cursor="pointer"
-          justifyContent="center"
+          justifyContent={{ base: 'flex-start', sm: 'center' }}
           className="contact__banner"
         >
           <Center
             pos="relative"
-            width="70px"
-            height="70px"
+            width={{ base: '50px', md: '70px' }}
+            height={{ base: '50px', md: '70px' }}
             bgColor="#3e3836"
             borderRadius="100%"
             mr="30px"
-            fontSize="30px"
+            fontSize={{ base: '20px', md: '30px' }}
             color="pink"
             className="phone__icon"
           >
@@ -76,10 +84,17 @@ const ContactBanner = () => {
             <FiPhoneCall className="phone__ani" />
           </Center>
           <VStack alignItems="flex-start">
-            <Text textStyle="mainHeading" fontSize="20px">
+            <Text
+              textStyle="mainHeading"
+              fontSize={{ base: '16px', md: '18px' }}
+            >
               Үзлэгийн цаг авах дугаар
             </Text>
-            <Text fontSize="22px" color="#cccccc" className="phone">
+            <Text
+              fontSize={{ base: '17px', md: '20px' }}
+              color="#cccccc"
+              className="phone"
+            >
               +976 9966 5511
             </Text>
           </VStack>
@@ -121,9 +136,13 @@ const Features = () => {
         }}
         gap="50px"
         mb="50px"
+        pt={{ base: '100px', sm: '0' }}
       >
-        <GridItem>
-          <Hding h1="Эрүүл мэнд эрхэм дээд баялаг" h3="Яагаад биднийг сонгох вэ?" />
+        <GridItem textAlign={{ base: 'center', sm: 'left' }}>
+          <Hding
+            h1="Эрүүл мэнд эрхэм дээд баялаг"
+            h3="Яагаад биднийг сонгох вэ?"
+          />
           <Stack>
             {choose.map(({ ...props }, i) => {
               return (
@@ -145,6 +164,7 @@ const Features = () => {
                       borderRadius="100%"
                       color="white"
                       fontSize="20px"
+                      mb="10px"
                     >
                       {props.id}
                     </Center>

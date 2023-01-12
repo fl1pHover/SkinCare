@@ -23,9 +23,10 @@ const Service = () => {
         }}
         height="100%"
         position={'relative'}
+        transform={{ base: 'translateY(80px)', md: 'translateY(0px)' }}
         zIndex="2"
       >
-        <GridItem height={{ base: '240px', md: '100%' }}>
+        <GridItem height={{ base: '280px', md: '100%' }}>
           <Image
             src="/avatar/1.jpg"
             objectFit="cover"

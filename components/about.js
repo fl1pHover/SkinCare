@@ -112,7 +112,7 @@ const About = () => (
                         lg: '45%',
                       }}
                       px={{
-                        base: '2em',
+                        base: '1em',
                         lg: 0,
                       }}
                     >

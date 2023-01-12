@@ -14,11 +14,14 @@ const Navbar = () => {
     <>
       <Box bgColor={'bgGrey'} id="navbar" as="section">
         <MainContainer>
-          <Flex justifyContent={'space-between'} py="0.9em">
+          <Flex
+            justifyContent={{ base: 'center', lg: 'space-between' }}
+            py="0.9em"
+          >
             <Text textStyle="main" display={{ base: 'none', lg: 'block' }}>
               Бидэнтэй түргэн холбогдоорой!
             </Text>
-            <Flex gap="20px">
+            <Flex gap="20px" direction={{ base: 'column', md: 'row' }}>
               <Flex alignItems="center" gap="5px">
                 <BiPhoneCall fontSize="25px" />
                 <Text textStyle="main">+18 065 555 22 33</Text>
@@ -38,7 +41,7 @@ const Navbar = () => {
           justify="space-between"
           py={{ base: 5, md: 0 }}
         >
-          <Heading width={'25%'}>Logo</Heading>
+          <Heading width={{ base: '40%', md: '25%' }}>Logo</Heading>
           <HStack
             width={'75%'}
             justifyContent="flex-end"
@@ -61,8 +64,15 @@ const Navbar = () => {
         {mobile ? (
           <div onClick={() => setMobile(!mobile)}>
             <MobileNavbar height="100vh" />
-            <Button position="fixed" right="20px" top="20px" zIndex="999">
-              <GrClose />
+            <Button
+              position="fixed"
+              right="20px"
+              top="20px"
+              zIndex="999"
+              bgColor="brown"
+              color="white"
+            >
+              <GrClose className="close__btn" />
             </Button>
           </div>
         ) : (

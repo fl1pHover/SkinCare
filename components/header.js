@@ -38,7 +38,7 @@ const Header = () => {
             color={'white'}
             fontSize={{
               base: '24px',
-              sm: '40px',
+              sm: '35px',
               md: '50px',
               lg: '72px',
               '2xl': '80px',
@@ -49,7 +49,7 @@ const Header = () => {
             <br />
             скин мед
           </Heading>
-          <Text textStyle={'hw'} color={'water'}>
+          <Text textStyle={'hw'} mb="20px !important" color={'water'}>
             Lorem ipsum dolor sit.
           </Text>
           <Button variant={'textBtn'} rounded="50px">

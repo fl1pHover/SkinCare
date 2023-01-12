@@ -3,7 +3,7 @@ import { Link, Text } from '@chakra-ui/react';
 const LinkItem = ({ color, text, href, width }) => {
   return (
     <Link
-      py={'2.5em'}
+      py={{ base: '1.5em', md: '2.5em' }}
       px="0.5em"
       color={color}
       _hover={{
