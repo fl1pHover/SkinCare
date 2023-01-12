@@ -1,63 +1,66 @@
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body {
-     font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .hw {
-     font-family: "Cookie", cursive !important;
-     color: #8ed1fc;
+  font-family: 'Lobster', cursive !important;
 }
+
 .heading {
-     font-family: "Libre Baskerville", serif;
+  font-family: 'Libre Baskerville', serif;
 }
+
 .divider {
-     &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          height: 1px;
-          width: 100%;
-          background: red;
-     }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: red;
+  }
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 .card {
-     position: relative;
-     width: auto;
+  position: relative;
+  width: auto;
 
-     border-radius: 10px;
-     transform-style: preserve-3d;
-     transition: all 0.8s ease;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
 .card:hover {
-     transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .thefront,
 .theback {
-     align-items: center;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     width: 100%;
-     height: 100%;
-     padding: 2.5em 2em;
-     text-align: center;
-     backface-visibility: hidden;
-     color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 2.5em 2em;
+  text-align: center;
+  backface-visibility: hidden;
+  color: black;
 }
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
 .thefront {
@@ -65,46 +68,46 @@ body {
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .theback {
-     position: absolute;
-     top: 0;
-     left: 0;
-     background: #8ed1fc;
-     color: white;
-     transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #8ed1fc;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 .contact__banner {
-     .phone__ani {
-          position: absolute;
-     }
-     .phone,
-     .phone__icon {
-          transition: 0.3s ease;
-     }
-     &:hover {
-          .phone {
-               color: #e6b59e;
-          }
-          .phone__icon {
-               color: white;
-          }
-          .phone__ani {
-               animation: splash 0.3s ease;
-          }
-     }
+  .phone__ani {
+    position: absolute;
+  }
+  .phone,
+  .phone__icon {
+    transition: 0.3s ease;
+  }
+  &:hover {
+    .phone {
+      color: #e6b59e;
+    }
+    .phone__icon {
+      color: white;
+    }
+    .phone__ani {
+      animation: splash 0.3s ease;
+    }
+  }
 }
 @keyframes splash {
-     0% {
-          transform: scale(1);
-     }
+  0% {
+    transform: scale(1);
+  }
 
-     100% {
-          transform: scale(1.7);
-          opacity: 0;
-     }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
 }
 
 .mySwiper {
-     height: 300px;
-     width: 90%;
+  height: 300px;
+  width: 90%;
 }
