@@ -51,7 +51,7 @@ const ContactBanner = () => {
               textStyle="mainHeading"
               fontSize={{ base: '16px', md: '18px' }}
             >
-              Зөвөлгөө авах дугаар
+              Зөвлөгөө авах дугаар
             </Text>
             <Text
               fontSize={{ base: '17px', md: '20px' }}

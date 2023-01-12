@@ -60,7 +60,7 @@ const Teams = () => {
 
                 <Stack mt="20px">
                   <Text textStyle="mainHeading">{props.name}</Text>
-                  <Text textStyle="hw" mt="0px !important">
+                  <Text textStyle="hw" mt="0px !important" className="hw">
                     {props.job}
                   </Text>
                 </Stack>
